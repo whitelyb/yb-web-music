@@ -1,11 +1,21 @@
-# Getting Started with Create React App
+# yb-web-music
+
 这是一个用React技术实现网易云音乐的项目
 
-### `yarn start`
-运行项目
+## Project setup
+```
+安装依赖
+yarn install
+```
 
-### `yarn test`
+### Compiles and hot-reloads for development
+```
+启动项目
+yarn start
+```
 
-### `yarn build`
-
-### `yarn eject`
+### Compiles and minifies for production
+```
+打包
+yarn build
+```

@@ -11,7 +11,7 @@ export default memo(function App() {
     return (
         <HashRouter>
             <YBAppHeader />
-            { renderRoutes(routes) }
+            { renderRoutes(routes) } 
             <YBAppFooter />
         </HashRouter>
     )

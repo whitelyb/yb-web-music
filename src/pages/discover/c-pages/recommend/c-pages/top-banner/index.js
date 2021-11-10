@@ -24,13 +24,14 @@ export default memo(function YBTopBanner() {
         dispatch(getBanner());
     }, [dispatch])
 
+    // 轮播图组件切换图片之前调用
     const bannerChange = useCallback((from, to) => {
         setTimeout(() => {
-            setCurrentIndex(from);
+            setCurrentIndex(to);
         }, 0)
     },[])
 
-    // 获取轮播图背景图片
+    // 获取轮播图 高斯模糊 背景图片
     const bgImage = banners[currentIndex] && (banners[currentIndex].imageUrl + "?imageView&blur=40x20");
 
     return (

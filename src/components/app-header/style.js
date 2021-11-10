@@ -32,11 +32,10 @@ export const HeaderLeft = styled.div`
 
     .select-list {
         display: flex;
-        line-height: 70px;
+        line-height: 75px;
 
         .select-item {
             position: relative;
-
             a {
                 display: block;
                 padding: 0 20px;

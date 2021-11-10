@@ -87,7 +87,7 @@ export const dicoverMenu = [
     },
     {
         title: "歌手",
-        link: "/discover/artist"
+        link: "/discover/singer"
     },
     {
         title: "新碟上架",

@@ -1,9 +1,10 @@
-import React, { memo } from 'react'
+import React, { memo } from 'react';
+import PropTypes from "prop-types";
 
 import { Link } from "react-router-dom";
 import { HeaderWrapper } from "./style";
 
-export default memo(function YBThemeHeaderRCM(props) {
+const YBThemeHeaderRCM = memo(function YBThemeHeaderRCM(props) {
     const { title, keywords, moreLink } = props;
     return (
         <HeaderWrapper className="sprite_02">
@@ -29,3 +30,14 @@ export default memo(function YBThemeHeaderRCM(props) {
         </HeaderWrapper>
     )
 })
+
+YBThemeHeaderRCM.defaultProps = {
+    keywords: []
+}
+
+YBThemeHeaderRCM.propTypes = {
+    title: PropTypes.string.isRequired,
+    keywords: PropTypes.array
+}
+
+export default YBThemeHeaderRCM;

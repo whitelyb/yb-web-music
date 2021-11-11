@@ -6,3 +6,10 @@ export function getTopBanner() {
     url: "/banner"
   })
 }
+
+// 请求热门推荐
+export function getHotRecommend() {
+  return request({
+    url: "/personalized"
+  })
+}

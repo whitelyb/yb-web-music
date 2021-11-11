@@ -1,7 +1,8 @@
 import React, { memo } from 'react'
 
 
-import YBTopBanner from './c-pages/top-banner'
+import YBTopBanner from './c-pages/top-banner';
+import HYHotRecommend from "./c-pages/hot-recommend";
 import {
     RecommendWraper,
     Content,
@@ -14,7 +15,9 @@ export default memo(function YBRecommend() {
         <RecommendWraper>
             <YBTopBanner />
             <Content className="wrap-v2">
-                <RecommendLeft></RecommendLeft>
+                <RecommendLeft>
+                    <HYHotRecommend />
+                </RecommendLeft>
                 <RecommendRight></RecommendRight>
             </Content>
         </RecommendWraper>

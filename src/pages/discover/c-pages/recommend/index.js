@@ -4,6 +4,7 @@ import React, { memo } from 'react'
 import YBTopBanner from './c-pages/top-banner';
 import YBHotRecommend from "./c-pages/hot-recommend";
 import YBNewAlbum from "./c-pages/new-album";
+import YBRankingList from "./c-pages/ranking-list";
 import {
     RecommendWraper,
     Content,
@@ -19,6 +20,7 @@ export default memo(function YBRecommend() {
                 <RecommendLeft>
                     <YBHotRecommend />
                     <YBNewAlbum />
+                    <YBRankingList />
                 </RecommendLeft>
                 <RecommendRight></RecommendRight>
             </Content>
